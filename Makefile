@@ -5,11 +5,11 @@ FLAGS = -Wall -Wextra -Werror
 REMOVE = rm -f
 LIBRARY = ar rc
 
-SRCS = 
+SRCS = ft_printf.c ft_putchar.c ft_putstr.c ft_putptr.c
 
 OBJS = $(SRCS:.c=.o)
 
-INCLUDE = 
+INCLUDE = ft_printf.h
 
 all: $(NAME)
 
@@ -26,3 +26,6 @@ fclean: clean
 	$(REMOVE) $(NAME)
 
 re: fclean all
+
+debug:
+	$(CC) -g $(FLAGS) $(SRCS)
