@@ -5,7 +5,7 @@ FLAGS = -Wall -Wextra -Werror
 REMOVE = rm -f
 LIBRARY = ar rc
 
-SRCS = ft_printf.c ft_putchar.c ft_putstr.c ft_putptr.c
+SRCS = ft_printf.c ft_putchar.c ft_putstr.c ft_putptr.c ft_puthex.c ft_putunbr.c
 
 OBJS = $(SRCS:.c=.o)
 
