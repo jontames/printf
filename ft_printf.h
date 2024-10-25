@@ -22,5 +22,6 @@ int	ft_putstr(char const *c);
 int	ft_putptr(unsigned long n);
 int	ft_puthex(unsigned long n, char const arg);
 int	ft_putunbr(unsigned int n);
+int	ft_putdinbr(int n);
 
 #endif
